@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+    	<meta charset="utf-8">
+    	<title>Média final</title>
+		<h1> Cálculo de média </h1>
+	</head>
+	<body>
+		<p> Aluno: Caio Henrique </p>
+		<input type="text" name="num1" id="num1Id" placeholder="Nota 1"/>
+		<br/>
+		<input type="text" name="num2" id="num2Id" placeholder="Nota 2"/>
+		<br/>
+		<input type="text" name="num3" id="num3Id" placeholder="Nota 3"/>
+		<br/>
+		<input type="text" name="num4" id="num4Id" placeholder="Nota 4"/>
+		<br/>
+		<input type="button" value="Resultado" id="btn-Resultado"/>
+		
+		<script type="text/javascript">
+		document.getElementById('btn-Resultado').addEventListener('click', function() {
+			var total_soma = Number (document.getElementById('num1Id').value)+
+							 Number (document.getElementById('num2Id').value)+
+							 Number (document.getElementById('num3Id').value)+
+							 Number (document.getElementById('num4Id').value);
+			function somaQuatroNumeros (primeiro, segundo, terceiro, quarto) {
+				var resultado = primeiro + segundo + terceiro + quarto;
+				return resultado;
+			}
+			alert('A média é: ' + total_soma/4);
+			var Aluno_aprovado
+			if (total_soma/4 >= 6) alert('Aluno aprovado');
+			var Aluno_reprovado
+			if (total_soma/4 < 6) alert('Aluno reprovado');
+			}) ;
+			
+		</script>
+	</body>
+</html>
